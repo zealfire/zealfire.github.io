@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="posts">
+
+    {% for post in site.posts %}
+    {% unless post.draft %}
+    {% unless post.redirect %}
+    <article class="container__block -narrow">
+        <h1 class="post-link-heading"><a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a></h1>
+
+        <div class="footnote post-date">
+            {{ post.date | date: "%B %e, %Y" }}
+        </div>
+
+        <div class="entry">
+            {% if post.thumbnail %}
+            <img src="{{ post.thumbnail }}" >
+            {% endif %}
+            {{ post.content | split:"<!--more-->" | first }}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="secondary">Read More&hellip;</a>
+        </div>
+
+    </article>
+    {% endunless %}
+    {% endunless %}
+    {% endfor %}
+</div>
+
