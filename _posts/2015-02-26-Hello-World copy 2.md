@@ -1,6 +1,6 @@
 ---
 layout: post
-title: URL-Encoding in SCSS
+title: Journey with Drupal
 ---
 
 <p>Hello every one mine association started with drupal started a year ago when i became an intern under Marg solution.This company is too much diversified and there are the various genres in which it caries out its business.The department under which i got to work dealt a lot with open source stuff and i was lucky to get the oppurtunity to work on Drupal related projects.</p>
