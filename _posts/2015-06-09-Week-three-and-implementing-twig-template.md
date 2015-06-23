@@ -9,7 +9,7 @@ Also since my module deals with creation of printer friendly version of nodes so
 
 In the process of learning theming I learnt about concept of rendering in Drupal and most importantly about invalidating catching while rendering, I mainly used getListCacheTags() to serve my purpose. Also knowing the that I can use template_preprocess_module() to create temporary variables and then rendering them in my templates was very helpful.
 
-In the present week I managed to develop a partial working prototype of module with not all but many configurations completed like links for printer friendly version are being shown in blocks as well as below the entities. Ofcourse the user can disable and re-enable these links. I have created view modes for the print version and hence generated core.entity_view_mode.$entity_type.$view_mode.yml file. I was impressed by the fact that I had to import configuration for this file becuase it was something very new to me.
+In the present week I managed to develop a partial working prototype of module with not all but many configurations completed like links for printer friendly version are being shown in blocks as well as below the entities. Ofcourse the user can disable and re-enable these links. I have created view modes for the print version and hence generated core.entity_view_mode.$entity_type.$view_mode.yml file. I was impressed by the fact that I had to import configuration for this file because it was something very new to me.
 
 Next week I will mainly be working on completing the configuration of module and try to rectify the problem which I have found in this week.
 
