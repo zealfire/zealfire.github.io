@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week six and working with PDF libraries
+title: GSoC2015: Week six and working with PDF libraries
 ---
 
 Last week I had managed to finish work on wkhtmktopdf generator so this week I started to work on mPDF and TCPDF generators. This week was different compared to weeks because midterm evaluation had to be completed about which I was excited in an unusual manner.
