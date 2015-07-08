@@ -3,7 +3,7 @@ layout: post
 title: GSoC2015 Week six and working with PDF libraries
 ---
 
-Last week I had managed to finish work on wkhtmktopdf generator so this week I started to work on mPDF and TCPDF generators. This week was different compared to weeks because midterm evaluation had to be completed about which I was excited in an unusual manner.
+Last week I had managed to finish work on wkhtmktopdf generator so this week I started to work on mPDF and TCPDF generators. This week was different compared to other weeks because midterm evaluation had to be completed about which I was excited in an unusual manner.
 
 The present<strong> printable</strong> module differs a lot from it ancestor module <strong>print</strong> mainly speaking with respect to its current architecture. One of the major changes introduced is keeping a separate module <strong>pdf_api</strong> outside of printable module. So in the present scenario all the preprocessing required before actual PDF to be generated is done in <strong>printable_pdf </strong>module which is a sub module of printable module and all the calling required to function of PDF libraries is done in pdf_api module. So in this way user only need to be majorly aware of one module(printable_module) where configuration settings of PDF is being taken care.
 
