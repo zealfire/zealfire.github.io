@@ -1,7 +1,9 @@
 ---
 layout: post
-title: GSoC2015: Week six and working with PDF libraries
+title: GSoC2015 Week six and working with PDF libraries
 ---
+
+This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week six while work done in week five can be tracked over <a href="http://zealfire.github.io/Week-five-and-issues-with-PDF-generation/">here</a>.
 
 Last week I had managed to finish work on wkhtmktopdf generator so this week I started to work on mPDF and TCPDF generator. This week was different compared to weeks because midterm evaluation had to be completed about which I was excited in an unusual manner.
 
