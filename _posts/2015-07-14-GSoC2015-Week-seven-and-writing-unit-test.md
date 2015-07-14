@@ -3,7 +3,7 @@ layout: post
 title: GSoC2015 Week seven and writing some unit test
 ---
 
-This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week seven while work done in week six can be tracked over <a href="zealfire.github.io/Week-six-and-working-with-PDF-libraries/">here</a>.
+This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week seven while work done in week six can be tracked over <a href="http://zealfire.github.io/GSoC2015-Week-six-and-working-with-PDF-libraries/">here</a>.
 
 Last week I had managed to finish work on mPDF and TCPDF generator and also most of the requirements for the pdf sub module were completed. So this week I started writing some unit test for the module. Writing tests for the module was a totally new experience for me because earlier the tests which I had written were mostly for the issues on drupal.org hence they were not that much complicated.
 
@@ -32,6 +32,6 @@ Disabling original constructor of class while calling them:
       &nbsp;&nbsp;->disableOriginalConstructor()<br/>
       &nbsp;&nbsp;->getMock();</code>
 
-I would recommend anyone willing to learn more about this code refer to this <a href="https://github.com/zealfire/printable/tree/master/tests/src/Unit">link</a> where unit test for printable module is being actively written. Next week I will be writing some more unit tests and then try to wrap up PDF sub module.
+I would recommend anyone willing to learn more about this code refer to this <a href="https://github.com/zealfire/printable/tree/master/tests/src/Unit">link</a> where unit tests for printable module are being actively written. Next week I will be writing some more unit tests and then try to wrap up PDF sub module.
 
 Some progress of PDF part of  module can be viewed over <a href="https://github.com/zealfire/pdf_api" style="text-decoration:none;" target="_blank">here</a> and remaining over <a href="https://github.com/zealfire/printable">here</a>.
