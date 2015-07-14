@@ -16,21 +16,21 @@ Most of the concept and knowledge required for writing unit test can be obtained
 Mock object which support chaining methods:
 
 <code>$routematch = $this->getMockBuilder('Drupal\Core\Routing\CurrentRouteMatch')<br/>
-        ->disableOriginalConstructor()<br/>
-        ->setMethods(array('getMasterRouteMatch', 'getParameter'))<br/>
-        ->getMock();<br/>
+      &nbsp;&nbsp;->disableOriginalConstructor()<br/>
+      &nbsp;&nbsp;->setMethods(array('getMasterRouteMatch', 'getParameter'))<br/>
+      &nbsp;&nbsp;->getMock();<br/>
     $routematch->expects($this->exactly(2))<br/>
-        ->method('getMasterRouteMatch')<br/>
-        ->will($this->returnSelf());<br/>
+    &nbsp;&nbsp;->method('getMasterRouteMatch')<br/>
+    &nbsp;&nbsp;->will($this->returnSelf());<br/>
     $routematch->expects($this->exactly(2))<br/>
-        ->method('getParameter')<br/>
-        ->will($this->returnValue($this->getMock('Drupal\Core\Entity\EntityInterface')));</code> 
+    &nbsp;&nbsp;->method('getParameter')<br/>
+    &nbsp;&nbsp;->will($this->returnValue($this->getMock('Drupal\Core\Entity\EntityInterface')));</code> 
 
 Disabling original constructor of class while calling them:
 
-<code>$entity_definition = $this->getMockBuilder('Drupal\Core\Entity\EntityType')
-      ->disableOriginalConstructor()
-      ->getMock();</code>
+<code>$entity_definition = $this->getMockBuilder('Drupal\Core\Entity\EntityType')<br/>
+      &nbsp;&nbsp;->disableOriginalConstructor()<br/>
+      &nbsp;&nbsp;->getMock();</code>
 
 I would recommend anyone willing to learn more about this code refer to this <a href="https://github.com/zealfire/printable/tree/master/tests/src/Unit">link</a> where unit test for printable module is being actively written. Next week I will be writing some more unit tests and then try to wrap up PDF sub module.
 
