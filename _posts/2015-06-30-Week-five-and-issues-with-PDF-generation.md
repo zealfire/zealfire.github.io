@@ -16,4 +16,4 @@ By doing a lot of debugging I came to conclusion that presence of base tag in tw
 
 Since this week I was able to create plugin for wkhtmltopdf libary so next week I will be focussing on resolving any further issues which I face while using this plugin and also start to work on generating plugin for mPDF library.
 
-Some progress of PDF part of  module can be viewed over <a href="https://github.com/zealfire/pdf_api" style="text-decoration:none;" target="_blank">here</a> and remaining over <a href="https://github.com/zealfire/printable/tree/pdf">here</a>. 
+Some progress of PDF part of  module can be viewed over <a href="https://github.com/zealfire/pdf_api" style="text-decoration:none;" target="_blank">here</a> and remaining over <a href="https://github.com/zealfire/printable/tree/pdf">here</a>.
