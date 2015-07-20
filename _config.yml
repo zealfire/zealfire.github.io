@@ -11,9 +11,6 @@ avatar: /ds-neue/assets/images/logo.svg
 # Google Analytics tracking code
 google_analytics:
 
-# Set status of comments
-comments: true
-
 # Used for Sitemap.xml, RSS and metadata
 url: http://tech.dosomething.org
 
