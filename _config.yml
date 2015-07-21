@@ -5,14 +5,14 @@
 # Sitewide variables - primarily used in the header
 
 name: Tech For Good
-description: DoSomething.org Engineering Blog
+description: Progress of my GSoC project
 avatar: /ds-neue/assets/images/logo.svg
 
 # Google Analytics tracking code
 google_analytics:
 
 # Used for Sitemap.xml, RSS and metadata
-url: http://tech.dosomething.org
+url: http://zealfire.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
