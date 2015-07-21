@@ -9,17 +9,17 @@ This week again most of the time was invested writing some more tests for the mo
 
 Running the functional tests in Drupal 8 is very easy and they can be executed using both command line and user interface. All the tests written for the module must be kept within the <code>src/Tests</code> folder of the module so that Drupal recognizes your test. Though a very good explanation about functional tests in Drupal 8 is present in drupal.org over <a href="https://api.drupal.org/api/drupal/core!modules!system!core.api.php/group/testing/8">here</a> still I would suggest you to refer to this <a href="http://www.sitepoint.com/automated-testing-drupal-8-modules/">link</a> for seeing some really good tests being written for a sample module.
 
-Most of the knowledge required to write functional test are present in above posted links but I would like to share with a code which I wrote to test the existence of printable version of nodes. Below written code is only portion of test which I had written under the class name <a href="https://github.com/zealfire/printable/blob/master/src/Tests/PrintableNodeTest.php"><code>PrintableNodeTest</code></a>. I extended the <code>NodeTestBase</code> class present in the core for this particular test in order to reuse the preprocessing work done by the latter class. 
+Most of the knowledge required to write functional test are present in above posted links but I would like to share with a code which I wrote to test the existence of printable version of nodes. Below written code is only portion of test which I had written under the class name <a href="https://github.com/zealfire/printable/blob/master/src/Tests/PrintableNodeTest.php"><code>PrintableNodeTest</code></a>. I have extended the <code>NodeTestBase</code> class present in the core for this particular test in order to reuse the preprocessing work done by the latter class. 
 
 <code>
 public function testCustomPageExists() { <br/>
-    $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
+    &nbsp;&nbsp;$node_type_storage = \Drupal::entityManager()->getStorage('node_type');
 
-    // Test /node/add page with only one content type.
-    $node_type_storage->load('article')->delete();
-    $this->drupalGet('node/add');
-    $this->assertResponse(200);
-    $this->assertUrl('node/add/page');
+    &nbsp;&nbsp; // Test /node/add page with only one content type
+    &nbsp;&nbsp;$node_type_storage->load('article')->delete();
+    &nbsp; &nbsp;$this->drupalGet('node/add');
+    &nbsp; &nbsp;$this->assertResponse(200);
+    &nbsp; &nbsp;$this->assertUrl('node/add/page');
     // Create a node.
     $edit = array();
     $edit['title[0][value]'] = $this->randomMachineName(8);
