@@ -13,7 +13,7 @@ Most of the knowledge required to write functional test are present in above pos
 
 <code>
 public function testCustomPageExists() { <br/>
-        $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
+          $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
 
       // Test /node/add page with only one content type
       $node_type_storage->load('article')->delete();
