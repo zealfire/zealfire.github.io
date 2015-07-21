@@ -13,34 +13,34 @@ Most of the knowledge required to write functional test are present in above pos
 
 <code>
 public function testCustomPageExists() { <br/>
-    <span>&nbsp;&nbsp;</span>$node_type_storage = \Drupal::entityManager()->getStorage('node_type');
+      $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
 
-    <span>&nbsp;&nbsp;</span> // Test /node/add page with only one content type
+      // Test /node/add page with only one content type
       $node_type_storage->load('article')->delete();
       $this->drupalGet('node/add');
       $this->assertResponse(200);
       $this->assertUrl('node/add/page');
-    // Create a node.
-    $edit = array();
-    $edit['title[0][value]'] = $this->randomMachineName(8);
-    $edit['body[0][value]'] = $this->randomMachineName(16);
-    $this->drupalPostForm('node/add/page', $edit, t('Save'));
+      // Create a node.
+      $edit = array();
+      $edit['title[0][value]'] = $this->randomMachineName(8);
+      $edit['body[0][value]'] = $this->randomMachineName(16);
+      $this->drupalPostForm('node/add/page', $edit, t('Save'));
 
-    // Check that the Basic page has been created.
-    $this->assertRaw(t('!post %title has been created.', array('!post' => 'Basic page', '%title' => $edit['title[0][value]'])), 'Basic page created.');
+      // Check that the Basic page has been created.
+      $this->assertRaw(t('!post %title has been created.', array('!post' => 'Basic page', '%title' => $edit['title[0][value]'])), 'Basic page created.');
 
-    // Check that the node exists in the database.
-    $node = $this->drupalGetNodeByTitle($edit['title[0][value]']);
-    $this->assertTrue($node, 'Node found in database.');
+      // Check that the node exists in the database.
+      $node = $this->drupalGetNodeByTitle($edit['title[0][value]']);
+      $this->assertTrue($node, 'Node found in database.');
 
-    // Verify that pages do not show submitted information by default.
-    $this->drupalGet('node/' . $node->id());
-    $this->assertResponse(200);
+      // Verify that pages do not show submitted information by default.
+      $this->drupalGet('node/' . $node->id());
+      $this->assertResponse(200);
 
-    $this->drupalGet('printable/print/node/' . $node->id());
-    $this->assertResponse(200);
-    $this->assertRaw($edit['title[0][value]'], 'Title discovered successfully in the printable page');
-    $this->assertRaw($edit['body[0][value]'], 'Body discovered successfully in the printable page');
+      $this->drupalGet('printable/print/node/' . $node->id());
+      $this->assertResponse(200);
+      $this->assertRaw($edit['title[0][value]'], 'Title discovered successfully in the printable page');
+      $this->assertRaw($edit['body[0][value]'], 'Body discovered successfully in the printable page');
   }
 </code> 
 
