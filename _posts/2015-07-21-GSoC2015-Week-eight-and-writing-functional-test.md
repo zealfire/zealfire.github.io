@@ -12,8 +12,9 @@ Running the functional tests in Drupal 8 is very easy and they can be executed u
 Most of the knowledge required to write functional test are present in above posted links but I would like to share with a code which I wrote to test the existence of printable version of nodes. Below written code is only portion of test which I had written under the class name <a href="https://github.com/zealfire/printable/blob/master/src/Tests/PrintableNodeTest.php"><code>PrintableNodeTest</code></a>. I have extended the <code>NodeTestBase</code> class present in the core for this particular test in order to reuse the preprocessing work done by the latter class. 
 
 <code>
-public function testCustomPageExists() { <br/>
-          $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
+public function testCustomPageExists() {
+
+      $node_type_storage = \Drupal::entityManager()->getStorage('node_type');
 
       // Test /node/add page with only one content type
       $node_type_storage->load('article')->delete();
