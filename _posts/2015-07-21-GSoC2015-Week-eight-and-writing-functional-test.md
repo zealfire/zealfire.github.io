@@ -13,13 +13,13 @@ Most of the knowledge required to write functional test are present in above pos
 
 <code>
 public function testCustomPageExists() { <br/>
-    &nbsp;&nbsp;$node_type_storage = \Drupal::entityManager()->getStorage('node_type');
+    <span>&nbsp;&nbsp;</span>$node_type_storage = \Drupal::entityManager()->getStorage('node_type');
 
-    &nbsp;&nbsp; // Test /node/add page with only one content type
-    &nbsp;&nbsp;$node_type_storage->load('article')->delete();
-    &nbsp; &nbsp;$this->drupalGet('node/add');
-    &nbsp; &nbsp;$this->assertResponse(200);
-    &nbsp; &nbsp;$this->assertUrl('node/add/page');
+    <span>&nbsp;&nbsp;</span> // Test /node/add page with only one content type
+      $node_type_storage->load('article')->delete();
+      $this->drupalGet('node/add');
+      $this->assertResponse(200);
+      $this->assertUrl('node/add/page');
     // Create a node.
     $edit = array();
     $edit['title[0][value]'] = $this->randomMachineName(8);
