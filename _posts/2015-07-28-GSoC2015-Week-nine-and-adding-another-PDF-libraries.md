@@ -1,11 +1,12 @@
 ---
 layout: post
-title: GSoC2015 Week eight and writing some functional test
+title: GSoC2015 Week nine and adding another PDF library
 ---
 
 This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week nine while work done in week eight can be tracked over <a href="http://zealfire.github.io/GSoC2015-Week-eight-and-writing-functional-test/">here</a>.
 
 This week I again visited PDF generating libraries again. And this time I managed to add <strong>dompdf</strong> to PDF submodule. It is an HTML to PDF converter and compliant with CSS 2.1. The library is easily available on GitHub over <a href="https://github.com/dompdf/dompdf">here</a> and can easily be installed via composer by adding following as a requirement in composer.json file.
+
 <code>
 {
   "require" : {
