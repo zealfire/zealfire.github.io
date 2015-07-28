@@ -10,10 +10,10 @@ This week I again visited PDF generating libraries again. And this time I manage
 <code>
 {
   
-   &nbsp"require" : {
+   &nbsp "require" : {
     
-     &nbsp&nbsp"dompdf/dompdf" : "0.6.*"
-  &nbsp}
+      "dompdf/dompdf" : "0.6.*"
+   }
 
 }
 </code>
