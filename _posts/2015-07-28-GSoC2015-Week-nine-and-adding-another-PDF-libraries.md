@@ -9,9 +9,13 @@ This week I again visited PDF generating libraries again. And this time I manage
 
 <code>
 {
+  
   "require" : {
+    
     "dompdf/dompdf" : "0.6.*"
+  
   }
+
 }
 </code>
 
@@ -19,6 +23,7 @@ The library makes use <strong>php-font-lib</strong> hence when we are installing
 
 <code>
 define('DOMPDF_ENABLE_AUTOLOAD', false);
+
 require_once '/path/to/vendor/dompdf/dompdf/dompdf_config.inc.php';
 </code> 
 
