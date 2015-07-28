@@ -13,8 +13,7 @@ This week I again visited PDF generating libraries again. And this time I manage
    &nbsp"require" : {
     
      &nbsp&nbsp"dompdf/dompdf" : "0.6.*"
-  
-    &nbsp}
+  &nbsp}
 
 }
 </code>
