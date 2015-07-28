@@ -10,16 +10,16 @@ This week I again visited PDF generating libraries again. And this time I manage
 <code>
 {
   
-  "require" : {
+   "require" : {
     
-    "dompdf/dompdf" : "0.6.*"
+     "dompdf/dompdf" : "0.6.*"
   
-  }
+    }
 
 }
 </code>
 
-The library makes use <strong>php-font-lib</strong> hence when we are installing library using composer it is recommended to set parameter <code>DOMPDF_ENABLE_AUTOLOAD</code> defined in the dompdf_config.inc.php file to <code>false</code>. This can be done by adding following lines in the code
+The library makes use <strong>php-font-lib</strong> hence when we are installing library using composer it is recommended to set parameter <code>DOMPDF_ENABLE_AUTOLOAD</code> defined in the dompdf_config.inc.php file to <code>false</code>. This was done by adding following lines in the generator
 
 <code>
 define('DOMPDF_ENABLE_AUTOLOAD', false);
