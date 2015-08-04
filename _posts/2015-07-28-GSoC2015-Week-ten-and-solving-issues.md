@@ -10,13 +10,20 @@ This week I mainly worked on the issues raised by the mentors and also implement
 Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the environment hence I am making use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the filed available. So my final code looks something like this:
 
 <code>$wkhtmltopdf_present = ClassLoader::classExists('mikehaertl\wkhtmlto\Pdf');</code>
-     <code>
-       $form["settings"]['pathtobinary'] = array(
-         '#type' => 'textfield',
-         '#title' => $this->t('Path to binary file'),</code><code>
-         '#default_value' => $this->config('printable.settings')->get('path_to_binary'),
-         '#description' => $this->t("Enter the path to binary file for wkhtmltopdf over here."),
-       );</code> 
+
+<code>$form["settings"]['pathtobinary'] = array(
+
+      '#type' => 'textfield',
+
+      '#title' => $this->t('Path to binary file'),
+</code>
+<code>
+      '#default_value' => $this->config('printable.settings')->get('path_to_binary'),
+
+       '#description' => $this->t("Enter the path to binary file for wkhtmltopdf over here."),
+
+       );
+</code> 
 
 Another way to implement this could have been by installing library module and then making use of <code> libraries_get_path()</code> function, the reason this method was not preferred because currently library module for Drupal 8 is still in development phase and also it is not sure where the installed external libraries for the modules would be kept. In Drupal 7 external libraries were kept in libraries folder but this may change for Drupal 8 in future.
 
