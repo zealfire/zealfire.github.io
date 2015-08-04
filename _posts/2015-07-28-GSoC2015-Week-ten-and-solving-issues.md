@@ -5,9 +5,9 @@ title: GSoC2015 Week ten and solving issues
 
 This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week ten while work done in week nine can be tracked over <a href="http://zealfire.github.io/GSoC2015-Week-nine-and-adding-another-PDF-libraries/">here</a>.
 
-This week I mainly worked on the issues raised by the mentors and also implemented some more functional tests. The issues related to pdf (api) module can be seen over <a href="https://github.com/zealfire/pdf_api/pull/7">here</a> while issues related to printable modules can be seen over <a href="https://github.com/zealfire/printable/pull/19">here</a>. One interesting task was to make the option to configure binary file of wkhtmltopdf library available as a field in the pdf configuration form.
+This week I mainly worked on the issues raised by the mentors and also implemented some more functional tests. The issues related to pdf (api) module can be seen over <a href="https://github.com/zealfire/pdf_api/pull/7">here</a> while issues related to printable modules can be seen over <a href="https://github.com/zealfire/printable/pull/19">here</a>. One of the interesting task was to make the option to configure binary file of wkhtmltopdf library available as a field in the PDF configuration form.
 
-Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the environment hence I am making use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the filed available. So my final code looks something like this:
+Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the drupal environment hence I am made use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the field available. So my final code looks something like this:
 
 <code>$wkhtmltopdf_present = ClassLoader::classExists('mikehaertl\wkhtmlto\Pdf');
       
