@@ -9,18 +9,18 @@ This week I mainly worked on the issues raised by the mentors and also implement
 
 Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the environment hence I am making use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the filed available. So my final code looks something like this:
 
-<code>$wkhtmltopdf_present = ClassLoader::classExists('mikehaertl\wkhtmlto\Pdf');</code>
+<code>$wkhtmltopdf_present = ClassLoader::classExists('mikehaertl\wkhtmlto\Pdf');
+      if ($wkhtmltopdf_present && $pdf_tool == 'wkhtmltopdf')
 
-<code>$form["settings"]['pathtobinary'] = array(
+        $form["settings"]['pathtobinary'] = array(
 
-      '#type' => 'textfield',
+        '#type' => 'textfield',
 
-      '#title' => $this->t('Path to binary file'),
-</code>
-<code>
-      '#default_value' => $this->config('printable.settings')->get('path_to_binary'),
+        '#title' => $this->t('Path to binary file'),
 
-       '#description' => $this->t("Enter the path to binary file for wkhtmltopdf over here."),
+        '#default_value' => $this->config('printable.settings')->get('path_to_binary'),
+
+        '#description' => $this->t("Enter the path to binary file for wkhtmltopdf over here."),
 
        );
 </code> 
