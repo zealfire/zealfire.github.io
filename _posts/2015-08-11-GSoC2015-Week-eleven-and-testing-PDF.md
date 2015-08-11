@@ -5,12 +5,11 @@ title: GSoC2015 Week eleven and testing PDF
 
 This post is about the progress which I have made while porting print module to Drupal 8 as part of GSoC 2015. Below is an excerpts about the work done in week eleven while work done in week ten can be tracked over <a href="http://zealfire.github.io/GSoC2015-Week-ten-and-solving-issues/">here</a>.
 
-Since most of the important features expected in the PDF sub module were completed last week therefore this week the mentors asked me to proof test the working of the module. The way it was supposed to be done was very interesting and unique because I was asked to create a PDF based on the material used previously by the mentors while dealing with a client. The demo PDF can be seen over here.
+Since most of the important expected features in the PDF sub module were completed last week therefore this week as asked by the mentors time was spent in proof testing the working of the module. The way it was supposed to be done was very interesting and unique for me because I was asked to create a PDF based on the material used previously by the mentors while dealing with a client. The demo PDF can be seen over <a href="http://cdn2.us.yokogawa.com/GS48C11Z05-00E-N_004_DI-511-05.pdf">here</a>.
 
-The PDF was to be created keeping in the mind that it should be comparable to a document which can be used in office work. The content of the PDF was supposed to contain text of various sizes and color, images of various formats, tables and HTML supporting header and footer. Also one more thing was supposed to be kept in mind while making the PDF that as a user of the module I was not suppose to make too many changes in the
-present code while trying to implement advance features. This was important from real world point of sense too because in daily usage too as a user we expect the module to provide us all the functionalities and not needing to interfere with code.
+The PDF was supposed to be created keeping in the mind that it should be comparable to a document which can be used in the daily office work. The content of the PDF was supposed to contain text of various sizes and color, images of various formats, tables and HTML supported header and footer. Also one more thing was supposed to be kept in mind while making the PDF that as a user of the module I was not suppose to make too many changes in the present code while trying to implement advance features. This was important from real world perspective because in daily usage too as a user we expect the module to provide us all the functionalities and not needing to interfere with the original code.
 
-The expected PDF was created without needing to make any advance changes in the code of the module hence assuring the fact that the module at present can be used in its development release. The created PDF can be seen over <a href="https://github.com/zealfire/printable/blob/master/testPDF.pdf">here</a>. Since a modified footer was expected to used in the demo PDF hence I made a small change in the code where I am calling PDF generator object from the <code>printable_pdf</code> module. The introduced code is as follow:
+The expected PDF was created without making any advance changes in the code of the module hence assuring the fact that the module at present can be used in its development release. The created PDF can be seen over <a href="https://github.com/zealfire/printable/blob/master/testPDF.pdf">here</a>. Since a modified footer was expected to used in the demo PDF hence I made a small change in the code where I am calling PDF generator object from the <code>printable_pdf</code> module. The introduced code is as follow:
 
 <code>$this->pdfGenerator->getObject()->SetFooter('This is a footer on left side||' . 'This is a footer on right side');</code>
 
@@ -18,8 +17,11 @@ This week I also added another important test in the module which tests the rend
 
 <code>
     $this->drupalGet('printable/pdf/node/' . $node->id());
+
     $parser = new \Smalot\PdfParser\Parser();
+    
     $pdf    = $parser->parseFile('modules/custom/printable/src/Tests/testPDF.pdf');
+    
     $text = $pdf->getText();
 </code>
 
