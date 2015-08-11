@@ -18,6 +18,7 @@ This week I also added another important test in the module which tests the rend
 <code>
     $this->drupalGet('printable/pdf/node/' . $node->id());
 
+
     $parser = new \Smalot\PdfParser\Parser();
     
     $pdf    = $parser->parseFile('modules/custom/printable/src/Tests/testPDF.pdf');
