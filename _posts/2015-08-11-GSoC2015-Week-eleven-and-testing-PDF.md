@@ -20,7 +20,6 @@ This week I also added another important test in the module which tests the rend
 
 
     $parser = new \Smalot\PdfParser\Parser();
-    
     $pdf    = $parser->parseFile('modules/custom/printable/src/Tests/testPDF.pdf');
     
     $text = $pdf->getText();
