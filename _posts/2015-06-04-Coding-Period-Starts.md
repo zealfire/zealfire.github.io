@@ -9,7 +9,7 @@ I was too excited by the beginning of coding period but the feelings were subdue
 
 I had a meeting with my mentors on Skype on the day coding period started and we discussed about the architecture of module and other minor important things like platform over which module should be developed, name of the module.Also during the meeting the name of module was decided as "<bold>printable</bold>". The name cannot remain as print because Symfony considers it as a reserved keyword.
 
-During the first week of coding period firstly I took some time to design the configuration form of the module. I managed to figure out that since in Drupal 8 so many things have been made as an entity so the print friendly version must be possible for 
+During the first week of coding period, I took some time to design the configuration form of the module. I managed to figure out that since in Drupal 8 so many things have been made as an entity so the print friendly version must be possible for 
 many of them.
 
 Finally I am populating only those entities in my form which has render controller as view_builder. Initially the module will be providing users with options like opening the print version on new/same page,option to add your CSS. The controller for the module has also been created but the functions called in them still needs to be completed which I have planned to complete next week.
