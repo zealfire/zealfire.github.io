@@ -3,7 +3,7 @@ layout: post
 title: Coding period started
 ---
 
-The coding period for GSoC 2015 started from 25th May which means that student are expected to start writting the code for their proposed projects.The start of coding period always bring excitement and anxiety within the students because they know that code written by them would be for the first time used by so many people.
+The coding period for GSoC 2015 started from 25th May which means that student are expected to start writing the code for their proposed projects.The start of coding period always bring excitement and anxiety within the students because they know that code written by them would be for the first time used by so many people.
 
 I was too excited by the beginning of coding period but the feelings were subdued a little bit because my end sem exams were starting from 27th and coding period from 25th. But the fact that I had started to work on project a little early and support from my mentors (<a href="https://www.drupal.org/u/sutharsan" target="_blank" style="text-decoration:none;">Erik</a>, <a href="https://www.drupal.org/u/jcnventura" target="_blank" style="text-decoration:none;">João</a>) helped me to complete the project part which I had proposed to do during the first week of coding period.
 
