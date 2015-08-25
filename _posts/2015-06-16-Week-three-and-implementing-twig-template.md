@@ -5,7 +5,7 @@ title: Week three and implementing twig template
 
 The week three of coding period has ended and this time I learnt about something very new to me, Twig template. In Drupal 8 Twig has replaced PHPTemplate as default templating engine which meant that the theming of module had to be done from beginning.
 
-Also since my module deals with creation of printer friendly version of nodes so it makes it even more important that theming should be paid more importance. The reference material present at drupal.org are good but still the things were not getting clear to me so I browsed more and more and finally found this small <a href="http://drewpull.drupalgardens.com/blog/drupal-8-twig-template-engine" target="_blank">blog </a>on Twig which helped me understand.
+Also since my module deals with creation of printer friendly version of nodes so it makes it even more important that theming should be paid more importance. The reference material present on drupal.org are good but still the things were not getting clear to me so I browsed more and more and finally found this small <a href="http://drewpull.drupalgardens.com/blog/drupal-8-twig-template-engine" target="_blank">blog </a>on Twig which helped me understand.
 
 In the process of learning theming I learnt about concept of rendering in Drupal and most importantly about invalidating catching while rendering, I mainly used getListCacheTags() to serve my purpose. Also knowing the that I can use template_preprocess_module() to create temporary variables and then rendering them in my templates was very helpful.
 
