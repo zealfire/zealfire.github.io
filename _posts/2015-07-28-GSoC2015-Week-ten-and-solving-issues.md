@@ -7,7 +7,7 @@ This post is about the progress which I have made while porting print module to 
 
 This week I mainly worked on the issues raised by the mentors and also completed some more functional tests. The issues related to pdf (api) module can be seen over <a href="https://github.com/zealfire/pdf_api/pull/7">here</a> while issues related to printable modules can be seen over <a href="https://github.com/zealfire/printable/pull/19">here</a>. One of the interesting task was to make the option to configure binary file of wkhtmltopdf library available as a field in the PDF configuration form.
 
-Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the drupal environment hence I am made use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the field available. So my final code looks something like this:
+Since the field to configure binary file of library should only be shown to user if wkhtmltopdf class is present in the drupal environment hence I made use of <code>ClassLoader::classExists();</code> to check presence of library and then accordingly making the field available. So my final code looks something like this:
 
 <code>$wkhtmltopdf_present = ClassLoader::classExists('mikehaertl\wkhtmlto\Pdf');
       
