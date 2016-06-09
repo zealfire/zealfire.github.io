@@ -25,7 +25,7 @@ baseurl: ""
 markdown: kramdown
 redcarpet:
     extensions: [with_toc_data]
-highlighter: pygments
+highlighter: rouge
 
 # Blog post permalinks default to the title (but can be overridden)
 permalink: /:title/
