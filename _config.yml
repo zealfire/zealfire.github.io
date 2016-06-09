@@ -22,7 +22,7 @@ baseurl: ""
 
 # Redcarpet does a good job of syntax highlighting
 # and has a number of useful features
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
     extensions: [with_toc_data]
 highlighter: pygments
