@@ -24,7 +24,7 @@ title: Optimizing Bonita BPM
 
 ![after_optimisation](https://cloud.githubusercontent.com/assets/5805013/24839091/22c8b244-1d72-11e7-960d-709b0b41b14e.png)
 
-<p> I know the above approach may not be the best way to solve this problem hence it would be really helpful if other people can suggest changes or any other method which can be used to solve the problem. Anyways I had a wonderful time solving this issue as I learned how to create tasks in Grunt and eventually calling them via the almighty python.</p>
+<p> I know the above approach may not be the best way to solve this problem hence it would be really helpful if other people can suggest changes or any other solution. Anyways I had a wonderful time solving this issue as I learned how to create tasks in Grunt and eventually calling them via the almighty python.</p>
 
 P.S. I had created a similar task in Grunt for optimizing CSS files (refer link to grunt file present above), the present python script already calls this task when executed.
 
