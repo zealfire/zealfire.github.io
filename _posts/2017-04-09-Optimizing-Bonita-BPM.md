@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimising Bonita BPM
+title: Optimizing Bonita BPM
 ---
 
 
