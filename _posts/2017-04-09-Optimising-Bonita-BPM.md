@@ -12,7 +12,7 @@ title: Optimising Bonita BPM
 
 <p>The UI designer allows us to create pages. These pages basically consist of widgets (both custom and few provided by Bonita). In these pages, we can add assets(javascript, images, and CSS) both at page and widget level. In my use case, the application which we had created was mostly making use of custom widgets. The count of such widgets was nearly fifty-five(55). The problem is not due to count of these widgets instead of the way in which these widgets are rendered in a page created by Bonita. A custom widget in Bonita majorly consists of a template which describes the HTML markup of the widget and a controller used to describe the widget logic. When these widgets are added to a page, Bonita BPM engine basically adds a source to these widgets in a script tag. To have a clear understanding how it is done in HTML please refer the below image.</p>
 
-![before_optimization_html](https://cloud.githubusercontent.com/assets/5805013/24839119/68900e9e-1d72-11e7-873f-3d33b0aad0ca.png)
+![before_optimization](https://cloud.githubusercontent.com/assets/5805013/24839166/207e3d5a-1d73-11e7-8ede-86c7b4c3e93d.png)
 
 <p>So now if there are N number of custom widgets then there would be N number script tags which basically means N number of HTTP requests for a page to render. In a real world application, these many calls are certainly obnoxious and bad for user experience. So how to solve this problem ?</p>
 
@@ -26,6 +26,6 @@ title: Optimising Bonita BPM
 
 <p> I know the above approach may not be the best way to solve this problem hence it would be great if other people can suggest changes or any other method which can be used to solve the problem. Thanks.</p>
 
-P.S. I had created a similar task in Grunt for optimizing CSS files (refer the above grunt file ink), the present python script already calls this task when executed.
+P.S. I had created a similar task in Grunt for optimizing CSS files (refer link to grunt file present above), the present python script already calls this task when executed.
 
 P.P.S. The above Grunt task and python script obviously can't be used in every scenario but I think they can easily be tweaked as per environment in order to make it work.
