@@ -9,7 +9,7 @@ title: Encounter with VPN
 	width:2%;
 }
 </style>
-The reason behind developing this project was to ease the process of connecting to VPN. In my daily work I constantly required a VPN connection, Cisco AnyConnect client was the obvious choice but because I was facing some issues installing the same in Ubuntu so instead I choose openconnect. After following below-mentioned step, I am now able to get connected to a VPN using few mouse clicks.
+The reason behind developing <a href="https://github.com/zealfire/openconnect">this</a> project was to ease the process of connecting to VPN. In my daily work I constantly required a VPN connection, Cisco AnyConnect client was the obvious choice but because I was facing some issues installing the same in Ubuntu so instead I choose openconnect. After following below-mentioned step, I am now able to get connected to a VPN using few mouse clicks.
 
 ## System Requirements ##
 
@@ -22,10 +22,10 @@ Currently I have tested this only on ubuntu 16.04, hopefully, in coming days I w
 	&nbsp;&nbsp;First run command below to active th TUN module: <code>sudo /sbin/modprobe tun</code> <br>
 	&nbsp;&nbsp;Install OpenConnect: <code>sudo apt-get install openconnect</code>
 </p>
-<p>Download this module and make openconnect script executable like this:
+<p>Download <a href="https://github.com/zealfire/openconnect">this</a> module and make openconnect script executable like this:
    <code>chmod +x /path/to/openconnect.sh</code>
 </p>
-<p>Change these variables: <i>GATEWAY</i>, <i>UBUNTUPASSWORD</i>, <i>USERNAME</i>, <i>PASSWORD</i> present in script as per your environment. </p>
+<p>Change these variables: <i>GATEWAY</i>, <i>UBUNTUPASSWORD</i>, <i>USERNAME</i>, <i>PASSWORD</i> present in script (openconnect.sh) as per your environment. </p>
 <p>Run the script like this:
 	<code>./openconnect.sh</code>, this is when you are in the root directory of the module otherwise add path to your module.
 </p>
@@ -44,4 +44,5 @@ Currently I have tested this only on ubuntu 16.04, hopefully, in coming days I w
 <p>After this you can access your newly created vpn command on right clicking under Nautilus-Actions actions.</p>
 ![click_nautilus](https://user-images.githubusercontent.com/5805013/27996495-a177e27e-6500-11e7-8c80-23decaaf7619.png)
 
+<a href="https://github.com/zealfire/openconnect">Link</a> to repo.
 <strong>Happy browsing</strong> <span class="emoji-wrapper">:smiley:</span>
