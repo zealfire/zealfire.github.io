@@ -12,17 +12,21 @@ Currently I have tested this only on ubuntu 16.04, hopefully in coming days I wi
 
 ## Installation ##
 
-Install expect using this command: <code>sudo apt-get install expect</code>
-Steps for installing openconnect: <br>
+<p>Install expect using this command: <code>sudo apt-get install expect</code> </p>
+<p>Steps for installing openconnect: <br>
 	&nbsp;&nbsp;First run command below to active th TUN module: <code>sudo /sbin/modprobe tun</code> <br>
 	&nbsp;&nbsp;Install OpenConnect: <code>sudo apt-get install openconnect</code>
-Download this module and make openconnect script executable like this:
+</p>
+<p>Download this module and make openconnect script executable like this:
    <code>chmod +x /path/to/openconnect.sh</code>
-Change these variables: *GATEWAY*, *UBUNTUPASSWORD*, *USERNAME*, *PASSWORD* present in script as per your environment.
-Run the script like this:
+</p>
+<p>Change these variables: *GATEWAY*, *UBUNTUPASSWORD*, *USERNAME*, *PASSWORD* present in script as per your environment. </p>
+<p>Run the script like this:
 	<code>./openconnect.sh</code>, this is when you are in the root directory of the module otherwise add path to your module.
-Now we have to install Nautilus-Actions Configuration Tool, type this in the terminal:
+</p>
+<p>Now we have to install Nautilus-Actions Configuration Tool, type this in the terminal:
 	<code>sudo apt-get install nautilus-actions</code>
+</p>
 <p>Launch the Nautilus-Actions Configuration Tool from the Dash after installing it.</p>
 ![dash_nautilus](https://user-images.githubusercontent.com/5805013/27996398-f211eb8c-64fe-11e7-808a-2d617d1ebecd.png)
 <p>First, click the New Action button on the toolbar and type the name of your action into the Context Label box, may be something like this: *Connect to VPN*</p>
