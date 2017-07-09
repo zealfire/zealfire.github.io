@@ -3,7 +3,12 @@ layout: post
 title: Encounter with VPN
 ---
 
-
+<style>
+.emoji-wrapper .emoji {
+	display:inline;
+	width:2%;
+}
+</style>
 The reason behind developing this project was to ease the process of connecting to VPN. In my daily work I constantly required a VPN connection, Cisco AnyConnect client was the obvious choice but because I was facing some issues installing the same in Ubuntu so instead I choose openconnect. After following below-mentioned step, I am now able to get connected to a VPN using few mouse clicks.
 
 ## System Requirements ##
@@ -39,4 +44,4 @@ Currently I have tested this only on ubuntu 16.04, hopefully, in coming days I w
 <p>After this you can access your newly created vpn command on right clicking under Nautilus-Actions actions.</p>
 ![click_nautilus](https://user-images.githubusercontent.com/5805013/27996495-a177e27e-6500-11e7-8c80-23decaaf7619.png)
 
-<strong style="display:inline; width:2%;">Happy browsing</strong> :smiley:
+<strong>Happy browsing</strong> <span class="emoji-wrapper">:smiley:</span>
