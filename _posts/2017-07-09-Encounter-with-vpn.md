@@ -4,11 +4,11 @@ title: Encounter with VPN
 ---
 
 
-The reason behind developing this project was to ease the process of connecting to VPN. In my daily work I constantly required a VPN connection, Cisco AnyConnect client was the obvious choice but because I was facing some issues installing the same in ubuntu so instead I choose openconnect. After following below mentioned step, I am now able to get connected to a vpn using few mouse clicks.
+The reason behind developing this project was to ease the process of connecting to VPN. In my daily work I constantly required a VPN connection, Cisco AnyConnect client was the obvious choice but because I was facing some issues installing the same in Ubuntu so instead I choose openconnect. After following below-mentioned step, I am now able to get connected to a VPN using few mouse clicks.
 
 ## System Requirements ##
 
-Currently I have tested this only on ubuntu 16.04, hopefully in coming days I will be adding installation instruction for other OS too.
+Currently I have tested this only on ubuntu 16.04, hopefully, in coming days I will be adding installation instruction for other OS too.
 
 ## Installation ##
 
