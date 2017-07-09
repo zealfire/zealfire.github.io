@@ -38,6 +38,7 @@ sass:
 gems:
   - jekyll-redirect-from # Instead of 301 of alias redirects
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jemoji
 
 # Exclude these files from your production _site
 exclude:
