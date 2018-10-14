@@ -9,7 +9,7 @@ description: Progress of my GSoC project
 avatar: /ds-neue/assets/images/logo.svg
 
 # Google Analytics tracking code
-google_analytics:
+google_analytics: UA-52891277-5
 
 # Used for Sitemap.xml, RSS and metadata
 url: http://zealfire.github.io
